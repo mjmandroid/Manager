@@ -25,10 +25,12 @@ public class ResultActivity extends Activity{
 		setContentView(R.layout.result_activity);
 		adapter = new MyAdapter(this);
 		Intent intent = getIntent();
-		list = (ArrayList<EmployeeBean>) intent.getSerializableExtra("list");
-		ListView listview = (ListView) findViewById(R.id.lv);
-		listview.setAdapter(adapter);
-		adapter.setDatas(list);
+		if(intent != null){
+			list = (ArrayList<EmployeeBean>) intent.getSerializableExtra("list");
+			ListView listview = (ListView) findViewById(R.id.lv);
+			listview.setAdapter(adapter);
+			adapter.setDatas(list);
+		}
 	}
 	
 }

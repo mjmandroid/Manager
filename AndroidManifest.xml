@@ -25,6 +25,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.employeesalarymanage.activity.ResultActivity"></activity>
+        <activity android:name="com.example.employeesalarymanage.activity.CalcActivity"></activity>
         <uses-library android:name="android.test.runner" />
     </application>
 

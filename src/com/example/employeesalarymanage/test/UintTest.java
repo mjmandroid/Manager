@@ -8,7 +8,7 @@ public class UintTest extends AndroidTestCase{
 	public void test(){
 		EmployeeDao dao = new EmployeeDao(getContext());
 		for (int i = 0; i < 50; i++) {
-			dao.add("asa"+i,"逼哥"+i, i+100+"");
+			dao.add("逼哥"+i,"123456"+i ,i+100+"");
 		}
 		
 	}
